@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: lumen-api
+    env: static
+    buildCommand: "composer install"
+    startCommand: "php -S 0.0.0.0:10000 -t public"
+    staticPublishPath: public
+    plan: free
